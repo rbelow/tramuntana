@@ -1,0 +1,19 @@
+# How to redirect non-www URLs to www?
+#
+# https://www.siteground.com/kb/how_to_redirect_nonwww_urls_to_www/
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^tramuntanavillas.com [NC]
+    RewriteRule ^(.*)$ https://www.tramuntanavillas.com/$1 [L,R=301]
+</IfModule>
+
+# Avoid the common pitfalls of making your website secure with SSL
+#
+# https://www.ovh.co.uk/g2220.eviter_les_pieges_de_ssl_avec_mon_site_web
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{SERVER_PORT} 80
+    RewriteRule ^(.*)$ https://www.tramuntanavillas.com/$1 [R,L]
+</IfModule>

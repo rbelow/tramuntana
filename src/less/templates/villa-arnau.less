@@ -1,0 +1,134 @@
+/*
+VILLA ARNAU
+*/
+.carousel {
+  height: 92%;
+}
+// Carousel
+
+.active,
+.item {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+/* Background images are set within the HTML using inline CSS, not here */
+.fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.carousel-indicators {
+  display: none;
+}
+
+.carousel-control .fa {
+  position: absolute;
+  top: 50%;
+}
+
+.carousel-control.right {
+  //left:auto;
+  //right:30px;
+}
+
+.description > div > h1 {
+  margin-top: 0;
+
+  .text-muted {
+    color: @brand-pure;
+  }
+}
+
+.description {
+  p {
+    color: @gray;
+  }
+
+  dl,
+  dt {
+    color: @gray-light;
+    //font-family: 'Droid Serif'
+  }
+
+  dd {
+    font-size: 20px;
+    //font-family: 'Droid Serif';
+  }
+}
+// Bootstrap description
+
+dd {
+  color: @description;
+}
+
+.customer-hero {
+  display: block;
+  width: 100%;
+  //height: 50%;
+  text-align: center;
+  background-blend-mode: multiply;
+  //background: rgba(236, 138, 0, 0.2) url('/img/VILLA_ARNAU_2491.jpg') no-repeat center center scroll;
+  background: rgba(0, 0, 0, 0.4) url("/img/aatik-tasneem-min.jpg") no-repeat center center scroll;
+  //background: rgba(85, 21, 143, 0.2) url('/img/VILLA_ARNAU_2491.jpg') no-repeat center center scroll; // Purple
+  //background: rgba(255, 190, 89, 0.1) url('/img/VILLA_ARNAU_2519.jpg') no-repeat center center scroll; // NOTE Last one
+  //background: rgba(48, 128, 194, 0.2) url('/img/VILLA_ARNAU_2491.jpg') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: left center;
+  //height: 520px;
+}
+
+.customer-hero {
+  color: white;
+
+  .featurette-heading > .text-muted {
+    //color: @brand-pure;
+  }
+
+  .lead {
+    color: @brand-success;
+  }
+
+  .fa {
+    color: @gray-lighter;
+  }
+}
+
+blockquote.pull-right {
+  //border-right: none;
+}
+
+blockquote > .lead {
+  //color: @brand-pure;
+}
+
+blockquote footer {
+  //color: @gray-lighter;
+}
+
+blockquote footer:before {
+  content: none;
+}
+
+.flow-hero {
+  background: @brand-pure;
+  color: white;
+
+  .featurette-heading > .text-muted {
+    color: @brand-success;
+  }
+
+  .lead {
+    color: white;
+  }
+}
